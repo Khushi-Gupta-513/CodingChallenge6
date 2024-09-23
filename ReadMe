@@ -1,0 +1,11 @@
+# CodingChallenge6
+
+# Employee Shift Management System
+
+This project is a basic system to manage employee shifts, designed for small businesses. It allows tracking of employee shifts, availability, and total hours worked during a week. The system includes:
+
+1. Employee Array: Initializes employee objects with assigned shifts.
+2. Shift Display: A function to display an employee’s assigned shifts.
+3. Shift Assignment: A function to assign a new shift, checking for conflicts.
+4. Total Hours Calculation: A function to calculate total hours worked by an employee.
+5. Available Employees: A function to list employees who are free on a specific day.
