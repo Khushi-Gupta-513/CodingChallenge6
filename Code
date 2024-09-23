@@ -70,3 +70,23 @@ console.log("Assigning new shift to John");
 assignShift('John', 'Friday', 5);  // Should assign successfully
 assignShift('Sara', 'Tuesday', 4);  // Should log an error (already has a shift on Tuesday)
 
+// Task 4: Create a function to calculate total hours worked
+function calculateTotalHours(employeeName) {
+    const employee = employees.find(emp => emp.name === employeeName);
+    if (!employee) {
+        console.log(`Employee ${employeeName} not found.`);
+        return;
+    }
+
+    const totalHours = employee.shifts.reduce((total, shift) => total + shift.hours, 0);
+    console.log(`${employeeName} has worked a total of ${totalHours} hours.`);
+    return totalHours;
+}
+
+console.log('Commit: "Create calculateTotalHours function"');
+
+// Test Task 4
+console.log("Calculating total hours worked by David");
+calculateTotalHours('David');  // Calculate hours for David
+
+
