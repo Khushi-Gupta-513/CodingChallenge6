@@ -32,3 +32,17 @@ const employees = [
 
 console.log('Commit: "Initialize employees with shift schedules"');
 
+// Task 2: Create a function to display employee shift details
+function displayEmployeeShifts(employee) {
+    console.log(`Employee: ${employee.name}`);
+    employee.shifts.forEach(shift => {
+        console.log(`Day: ${shift.day}, Hours: ${shift.hours}`);
+    });
+}
+
+console.log('Commit: "Create displayEmployeeShifts function"');
+
+// Test Task 2
+console.log("Displaying John's shifts");
+displayEmployeeShifts(employees[0]);  // Display John's shifts
+
